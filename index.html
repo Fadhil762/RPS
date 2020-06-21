@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper & Scissors game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metal+Mania">
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="header-title">Rock Paper Scissors</h1>
+        </div>
+        <!-- scoreboard section -->
+        <div id="scoreboard">
+            <div class="score-board-title">
+                <span class="player-sign">PLAYER</span>
+                <span class="ai-sign">AI</span>
+            </div>
+            <div class="score">
+                <span id="player-score">0</span>
+                <span id="score-separator">-</span>
+                <span id="ai-score">0</span>
+            </div>
+        </div>
+        <!-- close scoreboard-->
+        <!-- player vs comp section-->
+        <div id="playervscomp">
+            <div class="player-image">
+                <img src="/images/player.png" id="cyborg-image">
+            </div>
+            <div class="rps">
+                <button id="0" class="choice rock button">Rock</button>
+                <button id="1" class="choice paper button">Paper</button>
+                <button id="2" class="choice scissors button">Scissors</button>
+            </div>
+            <div class="player-popup">
+                <img src="/images/rock.png" id="p0">
+                <img src="/images/paper.png" id="p1">
+                <img src="/images/scissors.png" id="p2">
+            </div>
+            <div class="ai-popup">
+                <img src="/images/rock.png" id="a0">
+                <img src="/images/paper.png" id="a1">
+                <img src="/images/scissors.png" id="a2">
+            </div>
+            <div class="rps">
+                <button id="rock" class="choice rock result">Rock</button>
+                <button id="paper" class="choice paper result">Paper</button>
+                <button id="scissors" class="choice scissors result">Scissors</button>
+            </div>
+            <div class="ai-image">
+                <img src="/images/cop.png" id="cop-image">
+            </div>
+        </div>
+        <!-- player vs comp close-->
+        <!-- restart btn section-->
+        <div id="restart">
+            <button class="restart-btn">Restart</button>
+        </div>
+        <!-- restart btn close-->
+    </body>
+    <script type="text/javascript" src="/scripts/game.js"></script>
+</html>
